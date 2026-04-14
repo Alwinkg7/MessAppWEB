@@ -69,7 +69,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="border-4 border-brutal-border bg-white shadow-[12px_12px_0_#000] p-8 aspect-square relative flex items-center justify-center -rotate-1">
               <div className="absolute inset-0 pattern-dots-md text-gray-200"></div>
-              <h1 className="text-6xl md:text-8xl font-heading font-black text-center z-10 leading-none">
+              <h1 className="text-6xl md:text-8xl font-heading font-black text-black text-center z-10 leading-none">
                 SIMPLY <br/> <span className="text-brutal-pink drop-shadow-[2px_2px_0_#111]">BETTER</span> <br/> MESS.
               </h1>
             </div>
@@ -78,7 +78,7 @@ export default function HomePage() {
               <h2 className="text-4xl md:text-6xl font-heading font-black uppercase mb-6 drop-shadow-[2px_2px_0_#111]">
                 About MessApp
               </h2>
-              <div className="font-bold text-lg space-y-4 bg-white p-6 border-3 border-brutal-border shadow-brutal rounded-sm">
+              <div className="font-bold text-lg text-black space-y-4 bg-white p-6 border-3 border-brutal-border shadow-brutal rounded-sm">
                 <p>
                   Built by Alwin K G, MessApp is a brutalist, no-nonsense approach to managing canteen attendance and billing. 
                   We believe software should be bold, functional, and devoid of unnecessary fluff.
