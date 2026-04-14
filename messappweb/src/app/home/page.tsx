@@ -73,7 +73,7 @@ export default function HomePage() {
                 SIMPLY <br/> <span className="text-brutal-pink drop-shadow-[2px_2px_0_#111]">BETTER</span> <br/> MESS.
               </h1>
             </div>
-            
+
             
             <div className="flex flex-col">
               <h2 className="text-4xl md:text-6xl font-heading font-black uppercase mb-6 drop-shadow-[2px_2px_0_#111]">
@@ -99,7 +99,7 @@ export default function HomePage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-heading font-black uppercase mb-4">Get In Touch</h2>
-            <p className="font-bold text-lg text-gray-800 dark:text-gray-800">Have a question? Send it our way.</p>
+            <p className="font-bold text-lg text-gray-800 dark:text-gray-600">Have a question? Send it our way.</p>
           </div>
           
           <form className="brutal-card p-6 md:p-10 space-y-6">

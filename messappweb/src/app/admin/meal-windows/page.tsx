@@ -9,7 +9,7 @@ export default function AdminMealWindowsPage() {
         <h1 className="text-3xl font-heading font-black uppercase flex items-center gap-3">
            <FiCalendar /> Meal Windows
         </h1>
-        <p className="font-bold text-gray-800 mt-1">Configure serving times for each meal type.</p>
+        <p className="font-bold text-gray-600 mt-1">Configure serving times for each meal type.</p>
       </div>
       
       <div className="brutal-card bg-brutal-cyan p-10 text-center border-4">

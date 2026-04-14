@@ -9,7 +9,7 @@ export default function AdminMealTypesPage() {
         <h1 className="text-3xl font-heading font-black uppercase flex items-center gap-3">
            <FiGrid /> Meal Types Config
         </h1>
-        <p className="font-bold text-gray-800 mt-1">Configure different meal types (Breakfast, Lunch, Dinner).</p>
+        <p className="font-bold text-gray-600 mt-1">Configure different meal types (Breakfast, Lunch, Dinner).</p>
       </div>
       
       <div className="brutal-card bg-brutal-yellow p-10 text-center border-4">

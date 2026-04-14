@@ -7,7 +7,7 @@ export default function proxy(request: NextRequest) {
   const path = request.nextUrl.pathname;
   
   // Public routes that don't need auth
-  const isPublicRoute = path === '/login' || path === '/admin/login' || path.startsWith('/home');
+  const isPublicRoute = path === '/login' || path === '/login' || path.startsWith('/home');
   const isRootRoute = path === '/';
   
   // If no token and trying to access protected route
@@ -37,7 +37,7 @@ export default function proxy(request: NextRequest) {
       }
 
       // If user is logged in and tries to access login pages
-      if (path === '/login' || path === '/admin/login') {
+      if (path === '/login' || path === '/login') {
         if (roleId === 1) {
           return NextResponse.redirect(new URL('/admin/dashboard', request.url));
         } else {

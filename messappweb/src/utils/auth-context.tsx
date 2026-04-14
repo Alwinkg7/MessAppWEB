@@ -75,7 +75,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     
     // Determine where to redirect based on current path
     if (pathname?.startsWith("/admin")) {
-      router.push("/admin/login");
+      router.push("/login");
     } else {
       router.push("/login");
     }

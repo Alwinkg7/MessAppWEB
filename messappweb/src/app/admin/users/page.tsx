@@ -106,11 +106,11 @@ export default function AdminUsersPage() {
         <div className="flex gap-2">
           <button 
             onClick={() => handleToggleStatus(item.id, item.isActive)}
-            className="p-1 px-2 border-2 border-border-color bg-brutal-yellow hover:bg-white transition-colors text-xs font-bold uppercase rounded-sm"
+            className="p-1 px-2 border-2 text-black border-border-color bg-brutal-yellow hover:bg-white transition-colors text-xs font-bold uppercase rounded-sm"
           >
             Toggle
           </button>
-          <button className="p-1 border-2 border-border-color bg-white hover:bg-gray-100 transition-colors rounded-sm">
+          <button className="p-1 border-2 border-border-color text-black bg-white hover:bg-gray-100 transition-colors rounded-sm">
             <FiEdit2 size={16} />
           </button>
         </div>
@@ -123,7 +123,7 @@ export default function AdminUsersPage() {
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b-[4px] border-border-color pb-4 gap-4">
         <div>
           <h1 className="text-3xl font-heading font-black uppercase">User Management</h1>
-          <p className="font-bold text-gray-800 mt-1">Add, edit, or deactivate users in the system.</p>
+          <p className="font-bold text-gray-600 mt-1">Add, edit, or deactivate users in the system.</p>
         </div>
         
         <Button onClick={() => setIsModalOpen(true)} className="gap-2 shrink-0">

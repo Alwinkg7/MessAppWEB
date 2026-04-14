@@ -9,7 +9,7 @@ export default function AdminPricingPage() {
         <h1 className="text-3xl font-heading font-black uppercase flex items-center gap-3">
            <FiDollarSign /> Meal Pricing
         </h1>
-        <p className="font-bold text-gray-800 mt-1">Configure pricing rules and effective dates for meals.</p>
+        <p className="font-bold text-gray-600 mt-1">Configure pricing rules and effective dates for meals.</p>
       </div>
       
       <div className="brutal-card bg-brutal-pink text-white p-10 text-center border-4">

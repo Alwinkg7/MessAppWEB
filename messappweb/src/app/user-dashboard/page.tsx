@@ -147,7 +147,7 @@ export default function UserDashboardPage() {
       <div className="flex justify-between items-end border-b-[4px] border-border-color pb-4">
         <div>
           <h1 className="text-3xl md:text-5xl font-heading font-black uppercase">Welcome Back</h1>
-          <p className="font-bold text-gray-800 dark:text-gray-800 mt-2">Here's your mess summary, {user?.name || email}.</p>
+          <p className="font-bold text-gray-800 dark:text-gray-500 mt-2">Here's your mess summary, {user?.name || email}.</p>
         </div>
       </div>
 
@@ -170,7 +170,7 @@ export default function UserDashboardPage() {
                 level={"H"}
               />
             ) : (
-              <div className="w-[200px] h-[200px] flex items-center justify-center bg-gray-100 font-bold">
+              <div className="w-[200px] h-[200px] flex items-center justify-center text-black bg-gray-100 font-bold">
                 No QR Available
               </div>
             )}
@@ -241,10 +241,10 @@ export default function UserDashboardPage() {
             return (
               <div key={meal} className={`border-4 border-brutal-border p-6 flex flex-col justify-between ${isCompleted ? 'bg-brutal-green' : 'bg-white'} shadow-brutal transition-colors duration-500`}>
                 <div className="flex justify-between items-center mb-4">
-                  <h3 className="font-heading font-black text-xl uppercase">{meal}</h3>
-                  {meal === "Breakfast" && <FiCoffee size={24} className="stroke-[3]" />}
-                  {meal === "Lunch" && <FiSun size={24} className="stroke-[3]" />}
-                  {meal === "Dinner" && <FiMoon size={24} className="stroke-[3]" />}
+                  <h3 className="font-heading font-black text-black text-xl uppercase">{meal}</h3>
+                  {meal === "Breakfast" && <FiCoffee size={24} className="stroke-[3] text-black" />}
+                  {meal === "Lunch" && <FiSun size={24} className="stroke-[3] text-black" />}
+                  {meal === "Dinner" && <FiMoon size={24} className="stroke-[3] text-black" />}
                 </div>
                 <div className="flex items-center gap-2">
                    {isCompleted ? <FiCheckCircle size={24} className="text-brutal-border stroke-[3]" /> : <FiClock size={24} className="text-gray-400 stroke-[3]" />}

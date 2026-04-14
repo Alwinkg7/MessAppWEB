@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FiGithub, FiTwitter, FiInstagram } from "react-icons/fi";
+import { FiGithub, FiTwitter, FiInstagram, FiLinkedin } from "react-icons/fi";
 
 export const Footer = () => {
   return (
@@ -29,13 +29,13 @@ export const Footer = () => {
           <div className="flex flex-col gap-4">
             <h3 className="font-heading font-bold text-lg uppercase bg-brutal-cyan text-brutal-border px-2 py-1 w-fit border-2 border-border-color shadow-brutal-sm mb-2">Socials</h3>
             <div className="flex gap-4">
-              <a href="#" className="p-2 border-2 border-border-color bg-white text-brutal-border hover:bg-theme-primary hover:shadow-brutal transition-all hover:-translate-y-1 rounded-sm">
-                <FiTwitter size={24} className="stroke-[2.5]" />
+              <a href="https://www.linkedin.com/in/alwin-k-g" target="_blank" className="p-2 border-2 border-border-color bg-white text-brutal-border hover:bg-theme-primary hover:shadow-brutal transition-all hover:-translate-y-1 rounded-sm">
+                <FiLinkedin size={24} className="stroke-[2.5]" />
               </a>
-              <a href="#" className="p-2 border-2 border-border-color bg-white text-brutal-border hover:bg-theme-primary hover:shadow-brutal transition-all hover:-translate-y-1 rounded-sm">
+              <a href="https://github.com/Alwinkg7" target="_blank" className="p-2 border-2 border-border-color bg-white text-brutal-border hover:bg-theme-primary hover:shadow-brutal transition-all hover:-translate-y-1 rounded-sm">
                 <FiGithub size={24} className="stroke-[2.5]" />
               </a>
-              <a href="#" className="p-2 border-2 border-border-color bg-white text-brutal-border hover:bg-theme-primary hover:shadow-brutal transition-all hover:-translate-y-1 rounded-sm">
+              <a href="https://www.instagram.com/alwwy_kg/" target="_blank" className="p-2 border-2 border-border-color bg-white text-brutal-border hover:bg-theme-primary hover:shadow-brutal transition-all hover:-translate-y-1 rounded-sm">
                 <FiInstagram size={24} className="stroke-[2.5]" />
               </a>
             </div>

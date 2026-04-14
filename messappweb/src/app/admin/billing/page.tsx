@@ -147,7 +147,7 @@ export default function AdminBillingPage() {
     <div className="space-y-8 animate-slide-up">
       <div className="border-b-[4px] border-border-color pb-4">
         <h1 className="text-3xl font-heading font-black uppercase">Financial Management</h1>
-        <p className="font-bold text-gray-800 mt-1">Generate and track monthly mess bills for all users.</p>
+        <p className="font-bold text-gray-600 mt-1">Generate and track monthly mess bills for all users.</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -162,7 +162,7 @@ export default function AdminBillingPage() {
           <form onSubmit={handleGenerate} className="space-y-4 bg-white p-6 border-4 border-brutal-border shadow-brutal translate-x-[-2px] translate-y-[-2px]">
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-1.5">
-                <label className="font-heading font-bold text-sm uppercase">Year</label>
+                <label className="font-heading font-bold text-black text-sm uppercase">Year</label>
                 <input
                   type="number"
                   className="brutal-input"
@@ -171,7 +171,7 @@ export default function AdminBillingPage() {
                 />
               </div>
               <div className="space-y-1.5">
-                <label className="font-heading font-bold text-sm uppercase">Month (1-12)</label>
+                <label className="font-heading font-bold text-black text-sm uppercase">Month (1-12)</label>
                 <input
                   type="number"
                   min="1" max="12"

@@ -58,7 +58,7 @@ export default function AdminDashboardPage() {
     <div className="space-y-8 animate-slide-up">
       <div className="border-b-[4px] border-border-color pb-4 mb-8">
         <h1 className="text-3xl md:text-5xl font-heading font-black uppercase">Dashboard Overview</h1>
-        <p className="font-bold text-gray-800 mt-2">Manage the mess from a single brutal control panel.</p>
+        <p className="font-bold text-gray-600 mt-2">Manage the mess from a single brutal control panel.</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -101,15 +101,15 @@ export default function AdminDashboardPage() {
             <h2 className="text-2xl font-heading font-black uppercase">Quick Actions</h2>
           </div>
           <div className="grid grid-cols-2 gap-0 flex-1">
-             <button className="border-r-4 border-b-4 border-border-color bg-brutal-yellow hover:bg-white transition-colors flex flex-col items-center justify-center p-8 gap-4 font-heading font-bold uppercase">
+             <button className="border-r-4 text-black border-b-4 border-border-color bg-brutal-yellow hover:bg-white transition-colors flex flex-col items-center justify-center p-8 gap-4 font-heading font-bold uppercase">
                <FiCheckCircle size={32} className="stroke-[3]" />
                Scan QR
              </button>
-             <button className="border-b-4 border-border-color bg-brutal-cyan hover:bg-white transition-colors flex flex-col items-center justify-center p-8 gap-4 font-heading font-bold uppercase">
+             <button className="border-b-4 text-black border-border-color bg-brutal-cyan hover:bg-white transition-colors flex flex-col items-center justify-center p-8 gap-4 font-heading font-bold uppercase">
                <FiDollarSign size={32} className="stroke-[3]" />
                Generate Bills
              </button>
-             <button className="border-r-4 border-border-color bg-brutal-pink text-white hover:text-black hover:bg-white transition-colors flex flex-col items-center justify-center p-8 gap-4 font-heading font-bold uppercase">
+             <button className="border-r-4 text-black border-border-color bg-brutal-pink text-white hover:text-black hover:bg-white transition-colors flex flex-col items-center justify-center p-8 gap-4 font-heading font-bold uppercase">
                <FiUsers size={32} className="stroke-[3]" />
                Add User
              </button>

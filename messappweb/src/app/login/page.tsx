@@ -51,7 +51,7 @@ export default function UserLoginPage() {
     <div className="min-h-screen flex items-center justify-center p-4 bg-brutal-pink pattern-dots-md">
       <Link 
         href="/home" 
-        className="absolute top-6 left-6 flex items-center gap-2 font-heading font-bold bg-white px-4 py-2 border-3 border-border-color shadow-brutal hover:-translate-y-1 transition-transform"
+        className="absolute top-6 left-6 flex items-center gap-2 font-heading font-bold dark:text-black bg-white px-4 py-2 border-3 border-border-color shadow-brutal hover:-translate-y-1 transition-transform"
       >
         <FiArrowLeft size={20} className="stroke-[3]" /> Home
       </Link>
@@ -61,10 +61,10 @@ export default function UserLoginPage() {
           <FiUser size={32} className="stroke-[2.5]" />
         </div>
         
-        <h1 className="text-4xl font-heading font-black uppercase mb-2">User Portal</h1>
+        <h1 className="text-4xl font-heading font-black dark:text-black uppercase mb-2">User Portal</h1>
         <p className="font-bold text-gray-800 mb-8 max-w-[80%]">Enter your credentials to access the mess dashboard.</p>
         
-        <form onSubmit={handleLogin} className="space-y-6">
+        <form onSubmit={handleLogin} className="space-y-6 dark:text-black">
           <Input 
             label="Email Address" 
             type="email" 

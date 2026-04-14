@@ -50,7 +50,7 @@ export default function AdminAttendancePage() {
     <div className="space-y-6 animate-slide-up max-w-4xl mx-auto">
       <div className="border-b-[4px] border-border-color pb-4 mb-8">
         <h1 className="text-3xl font-heading font-black uppercase">QR Scanner Portal</h1>
-        <p className="font-bold text-gray-800 mt-1">Simulate scanning QR codes to record user attendance.</p>
+        <p className="font-bold text-gray-600 mt-1">Simulate scanning QR codes to record user attendance.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -63,13 +63,13 @@ export default function AdminAttendancePage() {
           <div className="flex w-full mb-6 border-4 border-brutal-border shadow-[4px_4px_0_#000] font-bold uppercase overflow-hidden bg-white">
             <button
               onClick={() => setMode("manual")}
-              className={`flex-1 py-3 text-center transition-colors border-r-4 border-brutal-border ${mode === "manual" ? "bg-brutal-border text-white" : "hover:bg-gray-100"}`}
+              className={`flex-1 py-3 text-center transition-colors border-r-4 border-brutal-border text-black ${mode === "manual" ? "bg-brutal-border text-white" : "hover:bg-gray-100"}`}
             >
               Manual Input
             </button>
             <button
               onClick={() => setMode("camera")}
-              className={`flex-1 py-3 text-center transition-colors ${mode === "camera" ? "bg-brutal-border text-white" : "hover:bg-gray-100"}`}
+              className={`flex-1 py-3 text-center transition-colors text-black ${mode === "camera" ? "bg-brutal-border text-white" : "hover:bg-gray-100"}`}
             >
               Camera Scan
             </button>
@@ -78,7 +78,7 @@ export default function AdminAttendancePage() {
           <div className="bg-white p-8 border-4 border-brutal-border shadow-brutal-lg w-full mb-8 rotate-1 min-h-[350px] flex flex-col items-center justify-center">
             {mode === "manual" ? (
               <div className="w-full">
-                <form onSubmit={handleScan} className="space-y-4">
+                <form onSubmit={handleScan} className="space-y-4 text-black">
                    <Input 
                      label="Scan QR Code or Type UUID" 
                      value={qrCode}
@@ -122,7 +122,7 @@ export default function AdminAttendancePage() {
                    {lastScanResult.time && <p className="mt-4 font-mono text-sm font-bold text-gray-700">Scanned at: {lastScanResult.time}</p>}
                  </div>
                ) : (
-                 <div className="opacity-50 font-bold max-w-xs uppercase tracking-widest text-sm">
+                 <div className="opacity-50 font-bold max-w-xs uppercase tracking-widest text-sm text-black">
                    Waiting for scan input...
                  </div>
                )}
