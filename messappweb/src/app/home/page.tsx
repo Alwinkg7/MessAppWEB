@@ -74,6 +74,7 @@ export default function HomePage() {
               </h1>
             </div>
             
+            
             <div className="flex flex-col">
               <h2 className="text-4xl md:text-6xl font-heading font-black uppercase mb-6 drop-shadow-[2px_2px_0_#111]">
                 About MessApp
